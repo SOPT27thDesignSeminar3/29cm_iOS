@@ -99,6 +99,8 @@
 		EC612D73255F94B3002BFEED /* 29cm_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DA8255F9724002BFEED /* Sources */,
+				EC612DA7255F971F002BFEED /* Resources */,
 				EC612D74255F94B3002BFEED /* AppDelegate.swift */,
 				EC612D76255F94B3002BFEED /* SceneDelegate.swift */,
 				EC612D78255F94B3002BFEED /* ViewController.swift */,
@@ -126,6 +128,116 @@
 				EC612D98255F94B6002BFEED /* Info.plist */,
 			);
 			path = 29cm_iOSUITests;
+			sourceTree = "<group>";
+		};
+		EC612DA7255F971F002BFEED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC612DA9255F972D002BFEED /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC612DA8255F9724002BFEED /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC612DB2255F98E5002BFEED /* Cells */,
+				EC612DAA255F9755002BFEED /* VCs */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC612DA9255F972D002BFEED /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC612DAB255F97A3002BFEED /* Home */,
+				EC612DAC255F97AC002BFEED /* ProductDetail */,
+				EC612DAD255F97C2002BFEED /* WeLove */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EC612DAA255F9755002BFEED /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				EC612DB0255F97E1002BFEED /* Home */,
+				EC612DAF255F97DB002BFEED /* ProductDetail */,
+				EC612DAE255F97C7002BFEED /* WeLove */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		EC612DAB255F97A3002BFEED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC612DAC255F97AC002BFEED /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		EC612DAD255F97C2002BFEED /* WeLove */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeLove;
+			sourceTree = "<group>";
+		};
+		EC612DAE255F97C7002BFEED /* WeLove */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeLove;
+			sourceTree = "<group>";
+		};
+		EC612DAF255F97DB002BFEED /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		EC612DB0255F97E1002BFEED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC612DB2255F98E5002BFEED /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC612DB5255F98F8002BFEED /* WeLove */,
+				EC612DB4255F98F2002BFEED /* ProductDetail */,
+				EC612DB3255F98ED002BFEED /* Home */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EC612DB3255F98ED002BFEED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC612DB4255F98F2002BFEED /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		EC612DB5255F98F8002BFEED /* WeLove */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeLove;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

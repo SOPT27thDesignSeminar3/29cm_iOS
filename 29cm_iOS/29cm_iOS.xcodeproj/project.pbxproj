@@ -15,6 +15,7 @@
 		EC612D81255F94B5002BFEED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612D7F255F94B5002BFEED /* LaunchScreen.storyboard */; };
 		EC612D8C255F94B6002BFEED /* _9cm_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D8B255F94B6002BFEED /* _9cm_iOSTests.swift */; };
 		EC612D97255F94B6002BFEED /* _9cm_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D96255F94B6002BFEED /* _9cm_iOSUITests.swift */; };
+		EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612DB6255F9EE2002BFEED /* WeLoveVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EC612D92255F94B6002BFEED /* 29cm_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 29cm_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC612D96255F94B6002BFEED /* _9cm_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9cm_iOSUITests.swift; sourceTree = "<group>"; };
 		EC612D98255F94B6002BFEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC612DB6255F9EE2002BFEED /* WeLoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		EC612DAE255F97C7002BFEED /* WeLove */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DB6255F9EE2002BFEED /* WeLoveVC.swift */,
 			);
 			path = WeLove;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */,
 				EC612D79255F94B3002BFEED /* ViewController.swift in Sources */,
 				EC612D75255F94B3002BFEED /* AppDelegate.swift in Sources */,
 				EC612D77255F94B3002BFEED /* SceneDelegate.swift in Sources */,

@@ -16,6 +16,11 @@
 		EC612D8C255F94B6002BFEED /* _9cm_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D8B255F94B6002BFEED /* _9cm_iOSTests.swift */; };
 		EC612D97255F94B6002BFEED /* _9cm_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D96255F94B6002BFEED /* _9cm_iOSUITests.swift */; };
 		EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612DB6255F9EE2002BFEED /* WeLoveVC.swift */; };
+		EC612DBF255F9F7C002BFEED /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612DBE255F9F7C002BFEED /* HomeVC.swift */; };
+		EC612DC4255F9F8A002BFEED /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612DC3255F9F8A002BFEED /* ProductDetailVC.swift */; };
+		EC612DC9255F9F9A002BFEED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612DC8255F9F9A002BFEED /* Home.storyboard */; };
+		EC612DCE255F9FA3002BFEED /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612DCD255F9FA3002BFEED /* ProductDetail.storyboard */; };
+		EC612DD3255F9FAE002BFEED /* WeLove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612DD2255F9FAE002BFEED /* WeLove.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		EC612D96255F94B6002BFEED /* _9cm_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9cm_iOSUITests.swift; sourceTree = "<group>"; };
 		EC612D98255F94B6002BFEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC612DB6255F9EE2002BFEED /* WeLoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveVC.swift; sourceTree = "<group>"; };
+		EC612DBE255F9F7C002BFEED /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EC612DC3255F9F8A002BFEED /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		EC612DC8255F9F9A002BFEED /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EC612DCD255F9FA3002BFEED /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
+		EC612DD2255F9FAE002BFEED /* WeLove.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeLove.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +182,7 @@
 		EC612DAB255F97A3002BFEED /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DC8255F9F9A002BFEED /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 		EC612DAC255F97AC002BFEED /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DCD255F9FA3002BFEED /* ProductDetail.storyboard */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 		EC612DAD255F97C2002BFEED /* WeLove */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DD2255F9FAE002BFEED /* WeLove.storyboard */,
 			);
 			path = WeLove;
 			sourceTree = "<group>";
@@ -201,6 +214,7 @@
 		EC612DAF255F97DB002BFEED /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DC3255F9F8A002BFEED /* ProductDetailVC.swift */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -208,6 +222,7 @@
 		EC612DB0255F97E1002BFEED /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EC612DBE255F9F7C002BFEED /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -348,7 +363,10 @@
 			files = (
 				EC612D81255F94B5002BFEED /* LaunchScreen.storyboard in Resources */,
 				EC612D7E255F94B5002BFEED /* Assets.xcassets in Resources */,
+				EC612DD3255F9FAE002BFEED /* WeLove.storyboard in Resources */,
 				EC612D7C255F94B3002BFEED /* Main.storyboard in Resources */,
+				EC612DC9255F9F9A002BFEED /* Home.storyboard in Resources */,
+				EC612DCE255F9FA3002BFEED /* ProductDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +392,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */,
+				EC612DC4255F9F8A002BFEED /* ProductDetailVC.swift in Sources */,
+				EC612DBF255F9F7C002BFEED /* HomeVC.swift in Sources */,
 				EC612D79255F94B3002BFEED /* ViewController.swift in Sources */,
 				EC612D75255F94B3002BFEED /* AppDelegate.swift in Sources */,
 				EC612D77255F94B3002BFEED /* SceneDelegate.swift in Sources */,

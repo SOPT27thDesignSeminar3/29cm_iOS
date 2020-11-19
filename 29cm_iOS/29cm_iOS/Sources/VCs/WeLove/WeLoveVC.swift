@@ -16,46 +16,65 @@ class WeLoveVC: UIViewController {
         collectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
 
 extension WeLoveVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if (indexPath.section == 0) {
+            return CGSize(width: collectionView.frame.width, height: 480)
+        }
+        
         return CGSize(width: collectionView.frame.width, height: 150)
+    }
+    
+    // header size
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if (section == 0) {
+            return CGSize.zero
+        } else {
+            return CGSize(width: collectionView.frame.width, height: 60) //refact
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 3
     }
 }
 
 extension WeLoveVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        switch section {
+        case 0:
+            return 1
+        default:
+            return 4
+        }
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
-            print("cell 0")
+            guard let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCell.identifier, for: indexPath) as? BannerCell else {return UICollectionViewCell() }
+            
+            return bannerCell
+        case 1:
             guard let popularCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCell.identifier, for: indexPath) as? PopularCell else { return UICollectionViewCell() }
             
-            popularCell.postTitle.text = "단풍이 물드니 아침이 달콤해졌다"
+            popularCell.postTitle.text = "단풍이 물드니 아침이 \n달콤해졌다"
+            popularCell.postTitle.numberOfLines = 0
+            popularCell.postTitle.sizeToFit()
+            
+            popularCell.postImage.image = UIImage(named: "imgPopularPost")
+            
+            popularCell.postDescription.text = "[집에서 즐기는 치즈] 조장현 셰프 북토크"
+            popularCell.postDate.text = "2020.11.08"
             
             return popularCell
-        case 1:
-            print("cell 1")
+        case 2:
             guard let dailyCell = collectionView.dequeueReusableCell(withReuseIdentifier: DailyCell.identifier, for: indexPath) as? DailyCell else { return UICollectionViewCell() }
             
             return dailyCell
@@ -71,10 +90,11 @@ extension WeLoveVC: UICollectionViewDataSource {
             guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: PopularHeader.identifier, for: indexPath) as? PopularHeader else { return UICollectionReusableView()}
             
             switch indexPath.section {
-            case 0:
+            case 0: break
+            case 1:
                 header.headerTitle.text = "Popular Post"
                 header.headerBar.isHidden = false
-            case 1:
+            case 2:
                 header.headerTitle.text = "Daily Post"
                 header.headerBar.isHidden = true
             default:

@@ -1,75 +1,47 @@
 //
-//  ProductDetailVC.swift
+//  WeLoveYJVC.swift
 //  29cm_iOS
 //
-//  Created by Yunjae Kim on 2020/11/14.
+//  Created by Yunjae Kim on 2020/11/19.
 //
 
 import UIKit
 
-class ProductDetailVC: UIViewController {
+class WeLoveYJVC: UIViewController {
+    @IBOutlet weak var wholeCV: UICollectionView!
     
-    
-    //MARK: - IBOutlets
-    
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var wholeCollectionView: UICollectionView!
-    
-    
-    
-    
-    //MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        wholeCollectionView.delegate = self
-        wholeCollectionView.dataSource = self
-        
+        wholeCV.delegate = self
+        wholeCV.dataSource = self
         // Do any additional setup after loading the view.
     }
     
+
     
-    
-    
-    //MARK: - User Define Functions
-    
-    
-    
-    
+
 }
 
 
-extension ProductDetailVC : UICollectionViewDataSource {
+
+extension WeLoveYJVC : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if indexPath.item == 0{
-            guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: ProductPriceCVC.identifier,
-                    for: indexPath) as? ProductPriceCVC else {
-                
-                return UICollectionViewCell()}
-            
-            
-            return cell
-            
-        }
-        else{
-            guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: RelatedCVC.identifier,
-                    for: indexPath) as? RelatedCVC else {
-                
-                return UICollectionViewCell()}
-            
-            
-            return cell
-            
-            
-        }
         
+        guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: WeLoveYJContainCVC.identifier,
+                for: indexPath) as? WeLoveYJContainCVC else {
+            
+            return UICollectionViewCell()}
+        
+        
+        return cell
+       
         
         
     }
@@ -77,7 +49,7 @@ extension ProductDetailVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "reusableViewPD", for: indexPath)
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "reusableYJWeLove", for: indexPath)
             return headerView
         default:
             assert(false,"")
@@ -90,7 +62,7 @@ extension ProductDetailVC : UICollectionViewDataSource {
     
 }
 
-extension ProductDetailVC : UICollectionViewDelegate {
+extension WeLoveYJVC : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         
@@ -103,18 +75,20 @@ extension ProductDetailVC : UICollectionViewDelegate {
     
 }
 
-extension ProductDetailVC : UICollectionViewDelegateFlowLayout {
+extension WeLoveYJVC : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        if indexPath.item == 0{
-            return CGSize(width: collectionView.frame.width , height: 162)
-        }
-        else{
-            return CGSize(width: collectionView.frame.width , height: 195)
-        }
+        
+        return CGSize(width: collectionView.frame.width , height: 864)
+//        if indexPath.item == 0{
+//            return CGSize(width: collectionView.frame.width , height: 162)
+//        }
+//        else{
+//            return CGSize(width: collectionView.frame.width , height: 195)
+//        }
         
     }
     
@@ -139,9 +113,10 @@ extension ProductDetailVC : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         let width: CGFloat = collectionView.frame.width
-        let height: CGFloat = 420
+        let height: CGFloat = 480
         return CGSize(width: width, height: height)
     }
  
     
 }
+

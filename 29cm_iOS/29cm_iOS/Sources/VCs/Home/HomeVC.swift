@@ -9,6 +9,8 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var homeCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +28,76 @@ class HomeVC: UIViewController {
     }
     */
 
+}
+
+extension HomeVC:UICollectionViewDataSource {
+    
+    //header customize
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+            return headerView
+        default:
+            assert(false, "false")
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        var index = indexPath.item
+        
+        if index == 0 {
+            guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: HomeMenuCVC.identifier, for: indexPath) as? HomeMenuCVC else {
+                return UICollectionViewCell()
+            }
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCVC.identifier, for: indexPath) as? ItemListCVC else {
+                return UICollectionViewCell()
+            }
+            return cell
+            
+        }
+        
+        
+        
+    }
+    
+}
+
+extension HomeVC:UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        
+        if indexPath.item == 0 {
+            return CGSize(width: collectionView.frame.width , height: 48)
+        }
+        else{
+            return CGSize(width: collectionView.frame.width , height: 130)
+        }
+        
+        
+    }
+ 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let width: CGFloat = collectionView.frame.width
+        let height: CGFloat = 512
+        return CGSize(width: width, height: height)
+    }
+    
+    
 }

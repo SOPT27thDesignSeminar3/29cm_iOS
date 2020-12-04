@@ -1,10 +1,3 @@
-//
-//  RelatedCVC.swift
-//  29cm_iOS
-//
-//  Created by Yunjae Kim on 2020/11/19.
-//
-
 import UIKit
 
 class RelatedCVC: UICollectionViewCell {
@@ -20,18 +13,13 @@ class RelatedCVC: UICollectionViewCell {
         productImageCV.dataSource = self
     }
     
-    
-    
-    
-    
 }
 
 
 extension RelatedCVC : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        
+
     }
     
 }
@@ -54,9 +42,7 @@ extension RelatedCVC : UICollectionViewDataSource {
         return cell
     }
     
-    
-    
-    
+  
 }
 
 extension RelatedCVC : UICollectionViewDelegateFlowLayout {
@@ -69,7 +55,7 @@ extension RelatedCVC : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
     }
-    
+
     //    UIEdgeInset
     
     func collectionView(_ collectionView: UICollectionView,
@@ -81,7 +67,6 @@ extension RelatedCVC : UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
-        
     }
     
     

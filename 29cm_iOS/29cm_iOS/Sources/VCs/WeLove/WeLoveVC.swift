@@ -20,11 +20,14 @@ class WeLoveVC: UIViewController {
 
 extension WeLoveVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if (indexPath.section == 0) {
-            return CGSize(width: collectionView.frame.width, height: 480)
+        switch indexPath.section {
+        case 0:
+            return CGSize(width: collectionView.frame.width, height: 450)
+        case 2:
+            return CGSize(width: collectionView.frame.width, height: 380)
+        default:
+            return CGSize(width: collectionView.frame.width, height: 150)
         }
-        
-        return CGSize(width: collectionView.frame.width, height: 150)
     }
     
     // header size
@@ -77,6 +80,11 @@ extension WeLoveVC: UICollectionViewDataSource {
         case 2:
             guard let dailyCell = collectionView.dequeueReusableCell(withReuseIdentifier: DailyCell.identifier, for: indexPath) as? DailyCell else { return UICollectionViewCell() }
             
+            dailyCell.postImage.image = UIImage(named: "rectangle31")
+            dailyCell.postTitle.numberOfLines = 0
+            dailyCell.postTitle.text = "일러스트레이터 윤예지의 \n추천 아이템"
+            dailyCell.postDescription.text = "쿠션감이 있는 런닝화가 필요하다면?"
+            dailyCell.postDate.text = "2020.11.19"
             return dailyCell
         default:
             return UICollectionViewCell()

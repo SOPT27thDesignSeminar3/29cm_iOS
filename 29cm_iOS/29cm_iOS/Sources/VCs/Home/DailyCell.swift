@@ -10,4 +10,8 @@ import UIKit
 class DailyCell: UICollectionViewCell {
     static let identifier = "DailyCell"
     
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var postTitle: UILabel!
+    @IBOutlet weak var postDescription: UILabel!
+    @IBOutlet weak var postDate: UILabel!
 }

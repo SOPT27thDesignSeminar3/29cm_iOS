@@ -13,7 +13,6 @@
 		246293BA257A2BCC003EFA28 /* HomeMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293B9257A2BCC003EFA28 /* HomeMenuCVC.swift */; };
 		246293C2257A2BEA003EFA28 /* ItemListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293C1257A2BEA003EFA28 /* ItemListCVC.swift */; };
 		246293CC257A4E31003EFA28 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293CB257A4E31003EFA28 /* HomeItem.swift */; };
-=======
 		AB3A349C256650060045DC23 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A349B256650060045DC23 /* BannerCell.swift */; };
 		AB8D5D3B2563EFD500B069EB /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D5D3A2563EFD500B069EB /* PopularCell.swift */; };
 		AB8D5D432563F08D00B069EB /* PopularHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D5D422563F08D00B069EB /* PopularHeader.swift */; };

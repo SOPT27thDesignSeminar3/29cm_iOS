@@ -16,6 +16,9 @@ class WeLoveVC: UIViewController {
         collectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
+
+    
+
 }
 
 extension WeLoveVC: UICollectionViewDelegateFlowLayout {
@@ -106,4 +109,5 @@ extension WeLoveVC: UICollectionViewDataSource {
         
         return UICollectionReusableView()
     }
+
 }

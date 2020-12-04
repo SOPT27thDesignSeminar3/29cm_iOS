@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "nav29TvUnselected.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "nav29TvUnselected@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "nav29TvUnselected@3x.png",
+      "scale" : "3x",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

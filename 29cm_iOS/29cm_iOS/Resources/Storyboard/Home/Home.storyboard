@@ -20,7 +20,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DuR-4O-ve2">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KoO-wV-zvA" customClass="HomeFlowLayout" customModule="_9cm_iOS" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KoO-wV-zvA" customClass="HomeVCFlowLayout" customModule="_9cm_iOS" customModuleProvider="target">
                                     <size key="itemSize" width="374" height="114"/>
                                     <size key="headerReferenceSize" width="50" height="512"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -166,7 +166,6 @@ brown</string>
         <!--Navigation Controller-->
         <scene sceneID="YVf-VY-gEu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ud5-h1-GAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="X67-IE-F3I" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Na8-Dn-37K">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -176,6 +175,7 @@ brown</string>
                         <segue destination="jhH-rk-g8b" kind="relationship" relationship="rootViewController" id="rQn-0Y-Xr7"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ud5-h1-GAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-767" y="86"/>
         </scene>
@@ -186,6 +186,7 @@ brown</string>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="8Oq-5e-8la"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V22-Wk-Juf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

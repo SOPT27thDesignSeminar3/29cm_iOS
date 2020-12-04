@@ -1,18 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "weloveTopImg.png",
+      "filename" : "icShoppingbag.png",
       "scale" : "1x",
       "idiom" : "universal"
     },
     {
+      "filename" : "icShoppingbag@2x.png",
       "scale" : "2x",
-      "filename" : "weloveTopImg@2x.png",
       "idiom" : "universal"
     },
     {
       "scale" : "3x",
-      "filename" : "weloveTopImg@3x.png",
+      "filename" : "icShoppingbag@3x.png",
       "idiom" : "universal"
     }
   ],

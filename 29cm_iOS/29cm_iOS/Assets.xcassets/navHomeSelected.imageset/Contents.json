@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "navHomeSelected.png",
+      "scale" : "1x",
+      "idiom" : "universal"
+    },
+    {
+      "scale" : "2x",
+      "idiom" : "universal",
+      "filename" : "navHomeSelected@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "navHomeSelected@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

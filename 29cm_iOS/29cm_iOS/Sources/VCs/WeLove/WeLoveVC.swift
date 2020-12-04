@@ -17,6 +17,7 @@ class WeLoveVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+
 }
 
 extension WeLoveVC: UICollectionViewDelegateFlowLayout {
@@ -109,5 +110,6 @@ extension WeLoveVC: UICollectionViewDataSource {
     }
 
     
+
 
 }

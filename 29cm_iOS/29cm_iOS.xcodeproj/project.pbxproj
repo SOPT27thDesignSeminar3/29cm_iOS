@@ -21,6 +21,15 @@
 		EC612DC9255F9F9A002BFEED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612DC8255F9F9A002BFEED /* Home.storyboard */; };
 		EC612DCE255F9FA3002BFEED /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612DCD255F9FA3002BFEED /* ProductDetail.storyboard */; };
 		EC612DD3255F9FAE002BFEED /* WeLove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC612DD2255F9FAE002BFEED /* WeLove.storyboard */; };
+		EC78364C25657B0400BA589C /* ProductPriceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC78364B25657B0400BA589C /* ProductPriceCVC.swift */; };
+		EC7836512565A35000BA589C /* RelatedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7836502565A35000BA589C /* RelatedCVC.swift */; };
+		EC7836562565A42500BA589C /* RelatedProductsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7836552565A42500BA589C /* RelatedProductsCVC.swift */; };
+		EC7C04C825664A2900CA8CD8 /* WeLoveYJ.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7C04C725664A2900CA8CD8 /* WeLoveYJ.storyboard */; };
+		EC7C04CD25664A7B00CA8CD8 /* WeLoveYJVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C04CC25664A7B00CA8CD8 /* WeLoveYJVC.swift */; };
+		EC7C04D225664D7400CA8CD8 /* WeLoveYJContainCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C04D125664D7400CA8CD8 /* WeLoveYJContainCVC.swift */; };
+		EC7C04D725664F0300CA8CD8 /* PopluarPostYJCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C04D625664F0300CA8CD8 /* PopluarPostYJCVC.swift */; };
+		EC7C04DF25664F1500CA8CD8 /* DailyPostYJCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C04DE25664F1500CA8CD8 /* DailyPostYJCVC.swift */; };
+		EC7C04E425665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C04E325665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +70,15 @@
 		EC612DC8255F9F9A002BFEED /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EC612DCD255F9FA3002BFEED /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
 		EC612DD2255F9FAE002BFEED /* WeLove.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeLove.storyboard; sourceTree = "<group>"; };
+		EC78364B25657B0400BA589C /* ProductPriceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPriceCVC.swift; sourceTree = "<group>"; };
+		EC7836502565A35000BA589C /* RelatedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedCVC.swift; sourceTree = "<group>"; };
+		EC7836552565A42500BA589C /* RelatedProductsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedProductsCVC.swift; sourceTree = "<group>"; };
+		EC7C04C725664A2900CA8CD8 /* WeLoveYJ.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeLoveYJ.storyboard; sourceTree = "<group>"; };
+		EC7C04CC25664A7B00CA8CD8 /* WeLoveYJVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveYJVC.swift; sourceTree = "<group>"; };
+		EC7C04D125664D7400CA8CD8 /* WeLoveYJContainCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveYJContainCVC.swift; sourceTree = "<group>"; };
+		EC7C04D625664F0300CA8CD8 /* PopluarPostYJCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopluarPostYJCVC.swift; sourceTree = "<group>"; };
+		EC7C04DE25664F1500CA8CD8 /* DailyPostYJCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPostYJCVC.swift; sourceTree = "<group>"; };
+		EC7C04E325665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveYJFlowLayOut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +138,7 @@
 				EC612D7D255F94B5002BFEED /* Assets.xcassets */,
 				EC612D7F255F94B5002BFEED /* LaunchScreen.storyboard */,
 				EC612D82255F94B5002BFEED /* Info.plist */,
+				EC7C04E325665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift */,
 			);
 			path = 29cm_iOS;
 			sourceTree = "<group>";
@@ -199,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				EC612DD2255F9FAE002BFEED /* WeLove.storyboard */,
+				EC7C04C725664A2900CA8CD8 /* WeLoveYJ.storyboard */,
 			);
 			path = WeLove;
 			sourceTree = "<group>";
@@ -207,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				EC612DB6255F9EE2002BFEED /* WeLoveVC.swift */,
+				EC7C04CC25664A7B00CA8CD8 /* WeLoveYJVC.swift */,
 			);
 			path = WeLove;
 			sourceTree = "<group>";
@@ -247,6 +268,9 @@
 		EC612DB4255F98F2002BFEED /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				EC78364B25657B0400BA589C /* ProductPriceCVC.swift */,
+				EC7836502565A35000BA589C /* RelatedCVC.swift */,
+				EC7836552565A42500BA589C /* RelatedProductsCVC.swift */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -254,6 +278,9 @@
 		EC612DB5255F98F8002BFEED /* WeLove */ = {
 			isa = PBXGroup;
 			children = (
+				EC7C04D125664D7400CA8CD8 /* WeLoveYJContainCVC.swift */,
+				EC7C04D625664F0300CA8CD8 /* PopluarPostYJCVC.swift */,
+				EC7C04DE25664F1500CA8CD8 /* DailyPostYJCVC.swift */,
 			);
 			path = WeLove;
 			sourceTree = "<group>";
@@ -366,6 +393,7 @@
 				EC612DD3255F9FAE002BFEED /* WeLove.storyboard in Resources */,
 				EC612D7C255F94B3002BFEED /* Main.storyboard in Resources */,
 				EC612DC9255F9F9A002BFEED /* Home.storyboard in Resources */,
+				EC7C04C825664A2900CA8CD8 /* WeLoveYJ.storyboard in Resources */,
 				EC612DCE255F9FA3002BFEED /* ProductDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,10 +419,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7836512565A35000BA589C /* RelatedCVC.swift in Sources */,
 				EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */,
+				EC7C04E425665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift in Sources */,
 				EC612DC4255F9F8A002BFEED /* ProductDetailVC.swift in Sources */,
+				EC7C04D225664D7400CA8CD8 /* WeLoveYJContainCVC.swift in Sources */,
+				EC78364C25657B0400BA589C /* ProductPriceCVC.swift in Sources */,
+				EC7C04D725664F0300CA8CD8 /* PopluarPostYJCVC.swift in Sources */,
 				EC612DBF255F9F7C002BFEED /* HomeVC.swift in Sources */,
+				EC7C04DF25664F1500CA8CD8 /* DailyPostYJCVC.swift in Sources */,
+				EC7C04CD25664A7B00CA8CD8 /* WeLoveYJVC.swift in Sources */,
 				EC612D79255F94B3002BFEED /* ViewController.swift in Sources */,
+				EC7836562565A42500BA589C /* RelatedProductsCVC.swift in Sources */,
 				EC612D75255F94B3002BFEED /* AppDelegate.swift in Sources */,
 				EC612D77255F94B3002BFEED /* SceneDelegate.swift in Sources */,
 			);

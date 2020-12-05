@@ -123,3 +123,12 @@ extension HomeVC:UICollectionViewDelegateFlowLayout {
     
     
 }
+
+extension HomeVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let productVC = UIStoryboard(name: "ProductDetail", bundle: nil).instantiateViewController(identifier: "ProductDetailVC") as? ProductDetailVC else {return}
+        
+        
+        self.navigationController?.pushViewController(productVC, animated: true)
+    }
+}

@@ -13,11 +13,32 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setItemData()
+        homeCollectionView.dataSource = self
+        homeCollectionView.delegate = self
         // Do any additional setup after loading the view.
     }
     
 
+    var homeItems:[HomeItem] = []
+    
+    func setItemData() {
+        homeItems.append(contentsOf: [
+       HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "[FW20 ESSENTIAL] 캐시미어 Cashmere Single Coat Wood-brown "),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~"),
+            HomeItem(itemImageName: "homeCell3MJ", brandName: "킨더살몬", itemName: "설명~")
+                 
+                 
+        ])
+    }
     /*
     // MARK: - Navigation
 
@@ -60,6 +81,7 @@ extension HomeVC:UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCVC.identifier, for: indexPath) as? ItemListCVC else {
                 return UICollectionViewCell()
             }
+            cell.setCell(item: homeItems[indexPath.row])
             return cell
             
         }
@@ -78,7 +100,7 @@ extension HomeVC:UICollectionViewDelegateFlowLayout {
         if indexPath.item == 0 {
             return CGSize(width: collectionView.frame.width , height: 48)
         }
-        else{
+        else {
             return CGSize(width: collectionView.frame.width , height: 130)
         }
         

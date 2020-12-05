@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		241DA70F257A55E0005BE512 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DA70E257A55E0005BE512 /* Home.swift */; };
+		24062953257B4A370070DE0A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24062952257B4A370070DE0A /* HomeItem.swift */; };
 		246293B2257A2A59003EFA28 /* HomeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293B1257A2A59003EFA28 /* HomeFlowLayout.swift */; };
 		246293BA257A2BCC003EFA28 /* HomeMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293B9257A2BCC003EFA28 /* HomeMenuCVC.swift */; };
 		246293C2257A2BEA003EFA28 /* ItemListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293C1257A2BEA003EFA28 /* ItemListCVC.swift */; };
-		246293CC257A4E31003EFA28 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293CB257A4E31003EFA28 /* HomeItem.swift */; };
 		24EBA6B3257A8570003C4E6F /* HomeVCFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBA6B2257A8570003C4E6F /* HomeVCFlowLayout.swift */; };
 		AB3A349C256650060045DC23 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A349B256650060045DC23 /* BannerCell.swift */; };
 		AB8D5D3B2563EFD500B069EB /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D5D3A2563EFD500B069EB /* PopularCell.swift */; };
@@ -60,11 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		241DA70E257A55E0005BE512 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = 29cm_iOS/Sources/VCs/Home/Home.swift; sourceTree = SOURCE_ROOT; };
+		24062952257B4A370070DE0A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		246293B1257A2A59003EFA28 /* HomeFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowLayout.swift; path = ../../../../../../../../HomeFlowLayout.swift; sourceTree = "<group>"; };
 		246293B9257A2BCC003EFA28 /* HomeMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuCVC.swift; sourceTree = "<group>"; };
 		246293C1257A2BEA003EFA28 /* ItemListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCVC.swift; sourceTree = "<group>"; };
-		246293CB257A4E31003EFA28 /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		24EBA6B2257A8570003C4E6F /* HomeVCFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeVCFlowLayout.swift; path = 29cm_iOS/Sources/VCs/HomeVCFlowLayout.swift; sourceTree = SOURCE_ROOT; };
 		AB3A349B256650060045DC23 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerCell.swift; path = 29cm_iOS/Sources/VCs/Home/BannerCell.swift; sourceTree = SOURCE_ROOT; };
 		AB8D5D3A2563EFD500B069EB /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopularCell.swift; path = 29cm_iOS/Sources/VCs/Home/PopularCell.swift; sourceTree = SOURCE_ROOT; };
@@ -265,7 +263,6 @@
 			children = (
 				246293B1257A2A59003EFA28 /* HomeFlowLayout.swift */,
 				24EBA6B2257A8570003C4E6F /* HomeVCFlowLayout.swift */,
-				246293CB257A4E31003EFA28 /* HomeItem.swift */,
 				EC612DBE255F9F7C002BFEED /* HomeVC.swift */,
 			);
 			path = Home;
@@ -286,7 +283,7 @@
 			children = (
 				246293C1257A2BEA003EFA28 /* ItemListCVC.swift */,
 				246293B9257A2BCC003EFA28 /* HomeMenuCVC.swift */,
-				241DA70E257A55E0005BE512 /* Home.swift */,
+				24062952257B4A370070DE0A /* HomeItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -460,14 +457,13 @@
 				EC7C04D225664D7400CA8CD8 /* WeLoveYJContainCVC.swift in Sources */,
 				24EBA6B3257A8570003C4E6F /* HomeVCFlowLayout.swift in Sources */,
 				EC78364C25657B0400BA589C /* ProductPriceCVC.swift in Sources */,
+				24062953257B4A370070DE0A /* HomeItem.swift in Sources */,
 				246293BA257A2BCC003EFA28 /* HomeMenuCVC.swift in Sources */,
 				EC7C04D725664F0300CA8CD8 /* PopluarPostYJCVC.swift in Sources */,
-				241DA70F257A55E0005BE512 /* Home.swift in Sources */,
 				EC612DBF255F9F7C002BFEED /* HomeVC.swift in Sources */,
 				EC7C04DF25664F1500CA8CD8 /* DailyPostYJCVC.swift in Sources */,
 				EC7C04CD25664A7B00CA8CD8 /* WeLoveYJVC.swift in Sources */,
 				EC612D79255F94B3002BFEED /* ViewController.swift in Sources */,
-				246293CC257A4E31003EFA28 /* HomeItem.swift in Sources */,
 				EC7836562565A42500BA589C /* RelatedProductsCVC.swift in Sources */,
 				EC612D75255F94B3002BFEED /* AppDelegate.swift in Sources */,
 				246293B2257A2A59003EFA28 /* HomeFlowLayout.swift in Sources */,

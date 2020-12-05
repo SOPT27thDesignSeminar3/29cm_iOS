@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24062953257B4A370070DE0A /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24062952257B4A370070DE0A /* HomeItem.swift */; };
-		246293B2257A2A59003EFA28 /* HomeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293B1257A2A59003EFA28 /* HomeFlowLayout.swift */; };
 		246293BA257A2BCC003EFA28 /* HomeMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293B9257A2BCC003EFA28 /* HomeMenuCVC.swift */; };
 		246293C2257A2BEA003EFA28 /* ItemListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246293C1257A2BEA003EFA28 /* ItemListCVC.swift */; };
 		24EBA6B3257A8570003C4E6F /* HomeVCFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBA6B2257A8570003C4E6F /* HomeVCFlowLayout.swift */; };
@@ -60,7 +59,6 @@
 
 /* Begin PBXFileReference section */
 		24062952257B4A370070DE0A /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
-		246293B1257A2A59003EFA28 /* HomeFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowLayout.swift; path = ../../../../../../../../HomeFlowLayout.swift; sourceTree = "<group>"; };
 		246293B9257A2BCC003EFA28 /* HomeMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuCVC.swift; sourceTree = "<group>"; };
 		246293C1257A2BEA003EFA28 /* ItemListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCVC.swift; sourceTree = "<group>"; };
 		24EBA6B2257A8570003C4E6F /* HomeVCFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeVCFlowLayout.swift; path = 29cm_iOS/Sources/VCs/HomeVCFlowLayout.swift; sourceTree = SOURCE_ROOT; };
@@ -261,7 +259,6 @@
 		EC612DB0255F97E1002BFEED /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				246293B1257A2A59003EFA28 /* HomeFlowLayout.swift */,
 				24EBA6B2257A8570003C4E6F /* HomeVCFlowLayout.swift */,
 				EC612DBE255F9F7C002BFEED /* HomeVC.swift */,
 			);
@@ -466,7 +463,6 @@
 				EC612D79255F94B3002BFEED /* ViewController.swift in Sources */,
 				EC7836562565A42500BA589C /* RelatedProductsCVC.swift in Sources */,
 				EC612D75255F94B3002BFEED /* AppDelegate.swift in Sources */,
-				246293B2257A2A59003EFA28 /* HomeFlowLayout.swift in Sources */,
 				EC612D77255F94B3002BFEED /* SceneDelegate.swift in Sources */,
 				AB8D5D482564329000B069EB /* DailyCell.swift in Sources */,
 				AB8D5D3B2563EFD500B069EB /* PopularCell.swift in Sources */,

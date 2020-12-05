@@ -25,7 +25,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="B0T-8U-mmh"/>
                                         </constraints>
-                                        <state key="normal" image="icSearch"/>
+                                        <state key="normal" image="icSearchYJ"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B6-YO-gsF">
                                         <rect key="frame" x="366" y="0.0" width="48" height="48"/>
@@ -39,14 +39,14 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="erX-PV-fKb"/>
                                         </constraints>
-                                        <state key="normal" image="icBack"/>
+                                        <state key="normal" image="icBackYJ"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCF-7L-iDH">
                                         <rect key="frame" x="270" y="0.0" width="48" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="T6r-yQ-g3W"/>
                                         </constraints>
-                                        <state key="normal" image="icHome"/>
+                                        <state key="normal" image="icHomeYJ"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -301,9 +301,9 @@
         <image name="3550700" width="125.5" height="18"/>
         <image name="78000" width="43" height="10.5"/>
         <image name="buttonBuy" width="375" height="60"/>
-        <image name="icBack" width="48" height="48"/>
-        <image name="icHome" width="48" height="48"/>
-        <image name="icSearch" width="48" height="48"/>
+        <image name="icBackYJ" width="48" height="48"/>
+        <image name="icHomeYJ" width="48" height="48"/>
+        <image name="icSearchYJ" width="48" height="48"/>
         <image name="icShoppingbag" width="48" height="48"/>
         <image name="imgProduct" width="375" height="420"/>
         <image name="star1" width="10" height="9.5"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P4H-CS-jij">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xou-8w-SyP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PMr-Zv-KJf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aWQ-Ff-bX0" customClass="HomeVCFlowLayout" customModule="_9cm_iOS" customModuleProvider="target">
                                     <size key="itemSize" width="307" height="66"/>
@@ -188,23 +188,58 @@
                         <viewLayoutGuide key="safeArea" id="ggN-XD-kO0"/>
                         <constraints>
                             <constraint firstItem="PMr-Zv-KJf" firstAttribute="leading" secondItem="ggN-XD-kO0" secondAttribute="leading" id="FyM-IE-pPa"/>
-                            <constraint firstItem="PMr-Zv-KJf" firstAttribute="top" secondItem="ggN-XD-kO0" secondAttribute="top" id="UVk-K8-b4i"/>
-                            <constraint firstItem="ggN-XD-kO0" firstAttribute="bottom" secondItem="PMr-Zv-KJf" secondAttribute="bottom" id="mbC-Mh-FUw"/>
+                            <constraint firstItem="PMr-Zv-KJf" firstAttribute="top" secondItem="nRT-Ze-qdv" secondAttribute="top" id="UVk-K8-b4i"/>
+                            <constraint firstAttribute="bottom" secondItem="PMr-Zv-KJf" secondAttribute="bottom" id="mbC-Mh-FUw"/>
                             <constraint firstItem="ggN-XD-kO0" firstAttribute="trailing" secondItem="PMr-Zv-KJf" secondAttribute="trailing" id="xXe-Td-07X"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QbI-xp-xJx"/>
                     <connections>
                         <outlet property="homeCollectionView" destination="PMr-Zv-KJf" id="xys-ml-s3Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFh-Ql-8gU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3902.898550724638" y="93.75"/>
+        </scene>
+        <!--HomeTBC-->
+        <scene sceneID="ubZ-xx-2Fo">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTBC" automaticallyAdjustsScrollViewInsets="NO" id="Xou-8w-SyP" customClass="HomeTBC" customModule="_9cm_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A2B-xp-DnB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jen-iE-NXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="2082.608695652174" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W9u-4x-0Cw">
+            <objects>
+                <navigationController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lOg-3u-gi6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="navHomeSelected" selectedImage="navHomeUnselected" id="6RZ-Xz-MhX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d9A-kk-6gK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P4H-CS-jij" kind="relationship" relationship="rootViewController" id="TLC-cS-Hyn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahe-1a-aqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2992.753623188406" y="93.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="homeHeart" width="16" height="14"/>
         <image name="homeimgMJ" width="375" height="512"/>
+        <image name="navHomeSelected" width="75" height="49"/>
+        <image name="navHomeUnselected" width="75" height="49"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

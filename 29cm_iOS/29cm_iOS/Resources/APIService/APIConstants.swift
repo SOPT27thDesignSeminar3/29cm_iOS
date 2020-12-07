@@ -8,8 +8,9 @@
 import Foundation
 
 struct APIConstants {
-    static let baseURL = ""
+    static let baseURL = "http://54.180.59.182:3300"
     
+    static let bagCatagoryURL = baseURL +  "/product?category=bags"
     
 }
 

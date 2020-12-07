@@ -21,6 +21,8 @@
 		EC2F34B7257BDEB300E32EB8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F34B6257BDEB300E32EB8 /* APIConstants.swift */; };
 		EC2F34C0257BDEEE00E32EB8 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F34BF257BDEEE00E32EB8 /* GenericResponse.swift */; };
 		EC2F34C5257BDF2200E32EB8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F34C4257BDF2200E32EB8 /* NetworkResult.swift */; };
+		EC4536BA257D488E008BC00C /* BagCategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4536B9257D488E008BC00C /* BagCategoryData.swift */; };
+		EC4536BF257D49C2008BC00C /* BagCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4536BE257D49C2008BC00C /* BagCategoryService.swift */; };
 		EC612D75255F94B3002BFEED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D74255F94B3002BFEED /* AppDelegate.swift */; };
 		EC612D77255F94B3002BFEED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D76255F94B3002BFEED /* SceneDelegate.swift */; };
 		EC612D79255F94B3002BFEED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC612D78255F94B3002BFEED /* ViewController.swift */; };
@@ -85,6 +87,8 @@
 		EC2F34B6257BDEB300E32EB8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EC2F34BF257BDEEE00E32EB8 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		EC2F34C4257BDF2200E32EB8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		EC4536B9257D488E008BC00C /* BagCategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagCategoryData.swift; sourceTree = "<group>"; };
+		EC4536BE257D49C2008BC00C /* BagCategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagCategoryService.swift; sourceTree = "<group>"; };
 		EC612D71255F94B3002BFEED /* 29cm_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 29cm_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC612D74255F94B3002BFEED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC612D76255F94B3002BFEED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				EC2F34B6257BDEB300E32EB8 /* APIConstants.swift */,
+				EC4536BE257D49C2008BC00C /* BagCategoryService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			children = (
 				EC2F34BF257BDEEE00E32EB8 /* GenericResponse.swift */,
 				EC2F34C4257BDF2200E32EB8 /* NetworkResult.swift */,
+				EC4536B9257D488E008BC00C /* BagCategoryData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -623,6 +629,7 @@
 				EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */,
 				AB3A349C256650060045DC23 /* BannerCell.swift in Sources */,
 				EC2F34C5257BDF2200E32EB8 /* NetworkResult.swift in Sources */,
+				EC4536BF257D49C2008BC00C /* BagCategoryService.swift in Sources */,
 				EC612DC4255F9F8A002BFEED /* ProductDetailVC.swift in Sources */,
 				AB8D5D432563F08D00B069EB /* PopularHeader.swift in Sources */,
 				EC7C04E425665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift in Sources */,
@@ -633,6 +640,7 @@
 				ABE75DBF257B5C1D00245480 /* HomeTBC.swift in Sources */,
 				EC2F34B7257BDEB300E32EB8 /* APIConstants.swift in Sources */,
 				EC2F34C0257BDEEE00E32EB8 /* GenericResponse.swift in Sources */,
+				EC4536BA257D488E008BC00C /* BagCategoryData.swift in Sources */,
 				EC78364C25657B0400BA589C /* ProductPriceCVC.swift in Sources */,
 				24062953257B4A370070DE0A /* HomeItem.swift in Sources */,
 				246293BA257A2BCC003EFA28 /* HomeMenuCVC.swift in Sources */,

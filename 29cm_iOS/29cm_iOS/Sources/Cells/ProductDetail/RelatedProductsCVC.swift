@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RelatedProductsCVC: UICollectionViewCell {
     
@@ -21,8 +22,8 @@ class RelatedProductsCVC: UICollectionViewCell {
     }
     
     func setImage(imgName : String){
-        self.productImage.image = UIImage(named: imgName)
-        
+        self.productImage.kf.setImage(with : URL(string: imgName))
+
     }
     
     

@@ -26,7 +26,7 @@ extension RelatedCVC : UICollectionViewDelegate {
 
 extension RelatedCVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return ProductDetailVC.bagcells.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -37,7 +37,7 @@ extension RelatedCVC : UICollectionViewDataSource {
             return UICollectionViewCell()}
         
         
-        cell.setImage(imgName: images[indexPath.item])
+        cell.setImage(imgName: ProductDetailVC.bagcells[indexPath.item].mainImage)
         
         return cell
     }

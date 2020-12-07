@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ProductDetailVC: UIViewController {
     
@@ -16,6 +17,11 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var wholeCollectionView: UICollectionView!
     
     
+    let headerImage = UIImageView()
+    var url = ""
+    static var bagcells : [BagCategoryData] = []
+    
+
     
     
     //MARK: - Lifecycle Methods
@@ -23,7 +29,7 @@ class ProductDetailVC: UIViewController {
         super.viewDidLoad()
         wholeCollectionView.delegate = self
         wholeCollectionView.dataSource = self
-        
+        getBagInfo()
         // Do any additional setup after loading the view.
     }
     
@@ -31,6 +37,51 @@ class ProductDetailVC: UIViewController {
     
     
     //MARK: - User Define Functions
+    
+    
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        
+        
+        
+    }
+    
+    
+    func getBagInfo(){
+        BagCategoryService.shared.getInfo() {networkResult -> Void in
+            switch networkResult {
+            case .success(let data) :
+                if let bags = data as? [BagCategoryData] {
+                    self.url = bags[0].mainImage
+                    
+                    for bag in bags{
+                        ProductDetailVC.bagcells.append(bag)
+                    }
+                    
+                    self.wholeCollectionView.reloadData()
+                    print(self.url)
+                    
+                }
+            case .requestErr(let msg) :
+                print(msg)
+                
+            case .pathErr :
+                print("path")
+            case .serverErr :
+                print("server")
+            case .networkFail :
+                print("networkFail;;;;")
+            
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+    }
     
     
     
@@ -53,6 +104,7 @@ extension ProductDetailVC : UICollectionViewDataSource {
                 
                 return UICollectionViewCell()}
             
+            cell.setMain()
             
             return cell
             
@@ -78,6 +130,22 @@ extension ProductDetailVC : UICollectionViewDataSource {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "reusableViewPD", for: indexPath)
+            
+            headerView.addSubview(headerImage)
+            headerImage.kf.setImage(with : URL(string: url))
+            if let superview = headerImage.superview {
+
+                headerImage.translatesAutoresizingMaskIntoConstraints = false
+                
+                headerImage.leadingAnchor.constraint(equalTo: superview.leadingAnchor).isActive = true
+                headerImage.trailingAnchor.constraint(equalTo: superview.trailingAnchor).isActive = true
+                headerImage.bottomAnchor.constraint(equalTo: superview.bottomAnchor).isActive = true
+                headerImage.topAnchor.constraint(equalTo: superview.topAnchor).isActive = true
+
+            }
+            
+            
+            
             return headerView
         default:
             assert(false,"")

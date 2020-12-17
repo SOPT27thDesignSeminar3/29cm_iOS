@@ -10,14 +10,17 @@ import UIKit
 class WeLoveVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var popularPostData: [PopularPostData] = []
+    var dailyPostData: [DailyPostData] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
-        // Do any additional setup after loading the view.
+        
+        getPostData()
     }
-
-
 }
 
 extension WeLoveVC: UICollectionViewDelegateFlowLayout {
@@ -51,8 +54,14 @@ extension WeLoveVC: UICollectionViewDataSource {
         switch section {
         case 0:
             return 1
+        case 1:
+//            return popularPostData.count
+            return 2
+        case 2:
+//            return dailyPostData.count
+            return 3
         default:
-            return 4
+            return 0
         }
     }
     
@@ -78,6 +87,8 @@ extension WeLoveVC: UICollectionViewDataSource {
             popularCell.postDescription.text = "[집에서 즐기는 치즈] 조장현 셰프 북토크"
             popularCell.postDate.text = "2020.11.08"
             
+//            popularCell.setCell(post: popularPostData[indexPath.row])
+            
             return popularCell
         case 2:
             guard let dailyCell = collectionView.dequeueReusableCell(withReuseIdentifier: DailyCell.identifier, for: indexPath) as? DailyCell else { return UICollectionViewCell() }
@@ -87,6 +98,8 @@ extension WeLoveVC: UICollectionViewDataSource {
             dailyCell.postTitle.text = "일러스트레이터 윤예지의 \n추천 아이템"
             dailyCell.postDescription.text = "쿠션감이 있는 런닝화가 필요하다면?"
             dailyCell.postDate.text = "2020.11.19"
+            
+//            dailyCell.setCell(post: dailyPostData[indexPath.row])
             return dailyCell
         default:
             return UICollectionViewCell()
@@ -116,8 +129,13 @@ extension WeLoveVC: UICollectionViewDataSource {
         
         return UICollectionReusableView()
     }
+}
 
-    
-
-
+extension WeLoveVC {
+    func getPostData() {
+        // 서버 데이터를 가져오는 함수
+        PostService.shared.getPostData { (response) in
+            print(response)
+        }
+    }
 }

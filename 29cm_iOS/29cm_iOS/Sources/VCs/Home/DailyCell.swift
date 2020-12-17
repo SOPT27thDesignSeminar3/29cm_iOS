@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DailyCell: UICollectionViewCell {
     static let identifier = "DailyCell"
@@ -14,4 +15,13 @@ class DailyCell: UICollectionViewCell {
     @IBOutlet weak var postTitle: UILabel!
     @IBOutlet weak var postDescription: UILabel!
     @IBOutlet weak var postDate: UILabel!
+}
+
+extension DailyCell {
+    func setCell(post: DailyPostData) {
+        postTitle.text = post.title
+        postDescription.text = post.desc
+        postDate.text = post.date
+        postImage.kf.setImage(with: URL(string: post.image))
+    }
 }

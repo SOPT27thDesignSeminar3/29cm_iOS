@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PopularCell: UICollectionViewCell {
     static let identifier = "PopularCell"
@@ -14,4 +15,13 @@ class PopularCell: UICollectionViewCell {
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postDescription: UILabel!
     @IBOutlet weak var postDate: UILabel!
+}
+
+extension PopularCell {
+    func setCell(post: PopularPostData) {
+        postTitle.text = post.title
+        postDate.text = post.date
+        postImage.kf.setImage(with: URL(string: post.image))
+        postDescription.text = post.desc
+    }
 }

@@ -16,6 +16,9 @@
 		AB8D5D3B2563EFD500B069EB /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D5D3A2563EFD500B069EB /* PopularCell.swift */; };
 		AB8D5D432563F08D00B069EB /* PopularHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D5D422563F08D00B069EB /* PopularHeader.swift */; };
 		AB8D5D482564329000B069EB /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D5D472564329000B069EB /* DailyCell.swift */; };
+		ABAED028258BC463002AACCB /* PopularPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAED027258BC463002AACCB /* PopularPostData.swift */; };
+		ABAED02D258BC5FC002AACCB /* DailyPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAED02C258BC5FC002AACCB /* DailyPostData.swift */; };
+		ABAED032258BCAAB002AACCB /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAED031258BCAAB002AACCB /* PostService.swift */; };
 		ABE75DBF257B5C1D00245480 /* HomeTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE75DBE257B5C1D00245480 /* HomeTBC.swift */; };
 		CAD5BA035B72D4E1CCB7C6B6 /* Pods_29cm_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EA45C71EDB5F909EA6044F /* Pods_29cm_iOS.framework */; };
 		EC2F34B7257BDEB300E32EB8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F34B6257BDEB300E32EB8 /* APIConstants.swift */; };
@@ -80,6 +83,9 @@
 		AB8D5D3A2563EFD500B069EB /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopularCell.swift; path = 29cm_iOS/Sources/VCs/Home/PopularCell.swift; sourceTree = SOURCE_ROOT; };
 		AB8D5D422563F08D00B069EB /* PopularHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopularHeader.swift; path = 29cm_iOS/Sources/VCs/Home/PopularHeader.swift; sourceTree = SOURCE_ROOT; };
 		AB8D5D472564329000B069EB /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyCell.swift; path = 29cm_iOS/Sources/VCs/Home/DailyCell.swift; sourceTree = SOURCE_ROOT; };
+		ABAED027258BC463002AACCB /* PopularPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPostData.swift; sourceTree = "<group>"; };
+		ABAED02C258BC5FC002AACCB /* DailyPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPostData.swift; sourceTree = "<group>"; };
+		ABAED031258BCAAB002AACCB /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		ABE75DBE257B5C1D00245480 /* HomeTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTBC.swift; sourceTree = "<group>"; };
 		B7F9A173DBB6D756722FC220 /* Pods-29cm_iOS-29cm_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-29cm_iOS-29cm_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-29cm_iOS-29cm_iOSUITests/Pods-29cm_iOS-29cm_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C69F5AEA8D41834F8F488CED /* Pods-29cm_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-29cm_iOS.release.xcconfig"; path = "Target Support Files/Pods-29cm_iOS/Pods-29cm_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 			children = (
 				EC2F34B6257BDEB300E32EB8 /* APIConstants.swift */,
 				EC4536BE257D49C2008BC00C /* BagCategoryService.swift */,
+				ABAED031258BCAAB002AACCB /* PostService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 				EC2F34BF257BDEEE00E32EB8 /* GenericResponse.swift */,
 				EC2F34C4257BDF2200E32EB8 /* NetworkResult.swift */,
 				EC4536B9257D488E008BC00C /* BagCategoryData.swift */,
+				ABAED027258BC463002AACCB /* PopularPostData.swift */,
+				ABAED02C258BC5FC002AACCB /* DailyPostData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -628,6 +637,7 @@
 				EC7836512565A35000BA589C /* RelatedCVC.swift in Sources */,
 				EC612DB7255F9EE2002BFEED /* WeLoveVC.swift in Sources */,
 				AB3A349C256650060045DC23 /* BannerCell.swift in Sources */,
+				ABAED032258BCAAB002AACCB /* PostService.swift in Sources */,
 				EC2F34C5257BDF2200E32EB8 /* NetworkResult.swift in Sources */,
 				EC4536BF257D49C2008BC00C /* BagCategoryService.swift in Sources */,
 				EC612DC4255F9F8A002BFEED /* ProductDetailVC.swift in Sources */,
@@ -635,6 +645,7 @@
 				EC7C04E425665A2B00CA8CD8 /* WeLoveYJFlowLayOut.swift in Sources */,
 				EC612DC4255F9F8A002BFEED /* ProductDetailVC.swift in Sources */,
 				246293C2257A2BEA003EFA28 /* ItemListCVC.swift in Sources */,
+				ABAED02D258BC5FC002AACCB /* DailyPostData.swift in Sources */,
 				EC7C04D225664D7400CA8CD8 /* WeLoveYJContainCVC.swift in Sources */,
 				24EBA6B3257A8570003C4E6F /* HomeVCFlowLayout.swift in Sources */,
 				ABE75DBF257B5C1D00245480 /* HomeTBC.swift in Sources */,
@@ -644,6 +655,7 @@
 				EC78364C25657B0400BA589C /* ProductPriceCVC.swift in Sources */,
 				24062953257B4A370070DE0A /* HomeItem.swift in Sources */,
 				246293BA257A2BCC003EFA28 /* HomeMenuCVC.swift in Sources */,
+				ABAED028258BC463002AACCB /* PopularPostData.swift in Sources */,
 				EC7C04D725664F0300CA8CD8 /* PopluarPostYJCVC.swift in Sources */,
 				EC612DBF255F9F7C002BFEED /* HomeVC.swift in Sources */,
 				EC7C04DF25664F1500CA8CD8 /* DailyPostYJCVC.swift in Sources */,
